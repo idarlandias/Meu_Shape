@@ -677,3 +677,242 @@ h4,
   transform: translateY(-1px);
   box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
 }
+
+/* =========================================================
+   MELHORIAS v2
+   ========================================================= */
+
+/* --- Avatar no cabeçalho --- */
+.user-greeting {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.user-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--gradient-brand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 0 14px var(--primary-glow);
+  letter-spacing: 0.5px;
+}
+
+/* --- Streak badge --- */
+.header-stats {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.streak-badge {
+  background: rgba(249, 115, 22, 0.12);
+  color: #fb923c;
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  padding: 0.3rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: "Outfit", sans-serif;
+  white-space: nowrap;
+}
+
+/* --- Splash screen --- */
+#splash-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+#splash-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+.splash-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  animation: splashPulse 1.2s ease-in-out infinite alternate;
+}
+.splash-avatar {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  color: white;
+  box-shadow: 0 0 35px rgba(16, 185, 129, 0.55);
+  letter-spacing: 1px;
+}
+.splash-logo p {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-main);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@keyframes splashPulse {
+  from { transform: scale(0.96); opacity: 0.75; }
+  to   { transform: scale(1.04); opacity: 1; }
+}
+
+/* --- Barra de progresso linear --- */
+.progress-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+.progress-bar-track {
+  flex-grow: 1;
+  height: 6px;
+  background: var(--surface-light);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-bar-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--gradient-brand);
+  border-radius: 3px;
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.progress-bar-text {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  min-width: 30px;
+  text-align: right;
+  font-family: "Outfit", sans-serif;
+}
+
+/* --- Card actions (lado direito) --- */
+.card-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+/* --- Botão de nota (lápis) --- */
+.note-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 6px;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.note-btn:hover { color: var(--primary-color); }
+
+/* --- Área de nota inline --- */
+.note-area { margin-top: 0.4rem; }
+.note-input {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-main);
+  font-size: 0.8rem;
+  padding: 0.35rem 0.65rem;
+  width: 100%;
+  outline: none;
+  font-family: "Inter", sans-serif;
+  transition: border-color 0.2s;
+}
+.note-input:focus { border-color: var(--primary-color); }
+.note-input::placeholder { color: var(--text-muted); }
+
+/* --- Contador de séries --- */
+.series-counter {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 0.15rem 0.4rem;
+}
+.series-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: all 0.2s;
+}
+.series-btn:hover {
+  color: var(--primary-color);
+  background: rgba(16, 185, 129, 0.1);
+}
+.series-count {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-main);
+  min-width: 30px;
+  text-align: center;
+  font-family: "Outfit", sans-serif;
+}
+.exercise-card.completed .series-count { color: var(--primary-color); }
+.exercise-card.completed .series-counter { border-color: var(--primary-color); }
+
+/* --- Confetti --- */
+#confetti-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 200;
+  overflow: hidden;
+}
+.confetti-piece {
+  position: absolute;
+  top: -12px;
+  animation: confettiFall linear forwards;
+}
+@keyframes confettiFall {
+  0%   { transform: translateY(0) rotate(0deg);   opacity: 1; }
+  80%  { opacity: 1; }
+  100% { transform: translateY(105vh) rotate(720deg); opacity: 0; }
+}
+
+/* --- Timer de descanso: flash ao terminar --- */
+.timer-box.finished {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 18px var(--primary-glow) !important;
+  animation: flashGreen 0.4s ease 4;
+}
+@keyframes flashGreen {
+  0%, 100% { background: var(--bg-color); }
+  50%       { background: rgba(16, 185, 129, 0.18); }
+}

@@ -1,10 +1,6 @@
 const workoutData = [
     {
-        id: 'monday',
-        num: 1,
-        name: 'Segunda',
-        focus: 'Inferior - Quadríceps',
-        title: 'Treino A',
+        id: 'monday', num: 1, name: 'Segunda', focus: 'Inferior - Quadríceps', title: 'Treino A',
         exercises: [
             { id: 'a-1', category: 'Ativação & Aquecimento', title: 'Cócoras c/ Peso + Agachamento Avanço', sets: '2 séries', reps: '10 + 10 repetições' },
             { id: 'a-2', category: 'Ativação & Aquecimento', title: 'Cadeira Extensora (Aquec.)', sets: '1 série', reps: '8 a 10 reps (Carga leve)' },
@@ -17,11 +13,7 @@ const workoutData = [
         ]
     },
     {
-        id: 'tuesday',
-        num: 2,
-        name: 'Terça',
-        focus: 'Ombro, Peito, Tríceps + Abs',
-        title: 'Treino B1',
+        id: 'tuesday', num: 2, name: 'Terça', focus: 'Ombro, Peito, Tríceps + Abs', title: 'Treino B1',
         exercises: [
             { id: 'b1-1', category: 'Ativação & Aquecimento', title: 'Mobilidade Ombro + Shoulder Complex', sets: '2 séries', reps: '10/10 + 8/8/8' },
             { id: 'b1-2', category: 'Ativação & Aquecimento', title: 'Desenvolvimento c/ Halteres (Aquec.)', sets: '1 série', reps: '8 a 10 reps (Carga leve)' },
@@ -35,11 +27,7 @@ const workoutData = [
         ]
     },
     {
-        id: 'wednesday',
-        num: 3,
-        name: 'Quarta',
-        focus: 'Inferior - Glúteo',
-        title: 'Treino C.1',
+        id: 'wednesday', num: 3, name: 'Quarta', focus: 'Inferior - Glúteo', title: 'Treino C.1',
         exercises: [
             { id: 'c1-1', category: 'Ativação & Aquecimento', title: 'Ponte de Glúteo + Abdução + Diagonal', sets: '3 exercícios', reps: 'Altas reps focadas em contração' },
             { id: 'c1-2', category: 'Ativação & Aquecimento', title: 'Extensão Quad Diag. no Cross (Aquec.)', sets: '1 série', reps: '8 a 10 reps (Carga leve)' },
@@ -51,13 +39,9 @@ const workoutData = [
         ]
     },
     {
-        id: 'thursday',
-        num: 4,
-        name: 'Quinta',
-        focus: 'Costas, Bíceps + Abs',
-        title: 'Treino B2',
+        id: 'thursday', num: 4, name: 'Quinta', focus: 'Costas, Bíceps + Abs', title: 'Treino B2',
         exercises: [
-            { id: 'b2-1', category: 'Ativação & Aquecimento', title: 'Mobilidade Ombro + Pulldown Leve', sets: 'Vários', reps: '10/10 + 8-10 reps' },
+            { id: 'b2-1', category: 'Ativação & Aquecimento', title: 'Mobilidade Ombro + Pulldown Leve', sets: '1 série', reps: '10/10 + 8-10 reps' },
             { id: 'b2-2', category: 'Treino Principal', title: 'Pulldown no Cross + Facepull', sets: '3 séries', reps: '10 a 15 reps c/ pausa de 2 seg' },
             { id: 'b2-3', category: 'Treino Principal', title: 'Puxada Aberta Pulley', sets: '4 séries', reps: 'Drop progressivo + 1 seg isometria' },
             { id: 'b2-4', category: 'Treino Principal', title: 'Remada Cavalinho + Supinada Halter', sets: '4 séries', reps: '12-8 reps pesadas + Dropset na últ.' },
@@ -69,11 +53,7 @@ const workoutData = [
         ]
     },
     {
-        id: 'friday',
-        num: 5,
-        name: 'Sexta',
-        focus: 'Inferior - Posterior',
-        title: 'Treino C.2',
+        id: 'friday', num: 5, name: 'Sexta', focus: 'Inferior - Posterior', title: 'Treino C.2',
         exercises: [
             { id: 'c2-1', category: 'Ativação & Aquecimento', title: 'Extensão em pé + RDL B-stance', sets: '2 séries', reps: '15 repetições' },
             { id: 'c2-2', category: 'Ativação & Aquecimento', title: 'RDL Unilateral (Aquec.)', sets: '1 série', reps: '8 a 10 reps (Carga leve)' },
@@ -85,25 +65,17 @@ const workoutData = [
         ]
     },
     {
-        id: 'saturday',
-        num: 6,
-        name: 'Sábado',
-        focus: 'Inferior Completo',
-        title: 'Treino D',
+        id: 'saturday', num: 6, name: 'Sábado', focus: 'Inferior Completo', title: 'Treino D',
         exercises: [
-            { id: 'd-1', category: 'Ativação & Aquecimento', title: 'Ativação e Mobilidade Padrão', sets: 'Diversos', reps: 'Foco em quadril e cócoras' },
+            { id: 'd-1', category: 'Ativação & Aquecimento', title: 'Ativação e Mobilidade Padrão', sets: '1 série', reps: 'Foco em quadril e cócoras' },
             { id: 'd-2', category: 'Treino Principal', title: 'Agachamento Livre + 1/2 Agachamento', sets: '4 séries', reps: '12 a 15 reps lentas + 20 reps altas' },
             { id: 'd-3', category: 'Treino Principal', title: 'Elevação Pélvica c/ Band', sets: '3 séries', reps: '12 reps + 2s isometria + diretas + drops até falha' },
             { id: 'd-4', category: 'Treino Principal', title: 'Stiff + Extensão Banco Romano', sets: '4 séries', reps: '10 a 12 reps lentas + até a falha' },
-            { id: 'd-5', category: 'Treino Principal', title: 'Extensão Diagonal + Coice Cross', sets: '3 séries', reps: '12 a 15 reps + Cluster 4-4-4-4 pesudas' }
+            { id: 'd-5', category: 'Treino Principal', title: 'Extensão Diagonal + Coice Cross', sets: '3 séries', reps: '12 a 15 reps + Cluster 4-4-4-4 pesadas' }
         ]
     },
     {
-        id: 'sunday',
-        num: 0,
-        name: 'Domingo',
-        focus: 'Descanso e Alongamento',
-        title: 'Ativação / Recovery',
+        id: 'sunday', num: 0, name: 'Domingo', focus: 'Descanso e Alongamento', title: 'Ativação / Recovery',
         exercises: [
             { id: 'sun-1', category: 'Mobilidade', title: 'Mobilidade Dinâmica Quadril', sets: '1 série', reps: '20 reps (10 cada lado)' },
             { id: 'sun-2', category: 'Mobilidade', title: 'Alongamento Posterior / Tornozelo', sets: '1 série', reps: '40s / 20s' },
@@ -114,85 +86,150 @@ const workoutData = [
     }
 ];
 
-// Constants for images
 const lowerImages = [
-    "lower_image_p001_01.jpeg", "lower_image_p001_02.jpeg", "lower_image_p001_03.jpeg", "lower_image_p001_04.jpeg",
-    "lower_image_p001_05.png", "lower_image_p001_06.png", "lower_image_p001_07.png",
-    "lower_image_p002_01.jpeg", "lower_image_p002_02.png", "lower_image_p002_03.jpeg"
+    "lower_image_p001_01.jpeg","lower_image_p001_02.jpeg","lower_image_p001_03.jpeg","lower_image_p001_04.jpeg",
+    "lower_image_p001_05.png","lower_image_p001_06.png","lower_image_p001_07.png",
+    "lower_image_p002_01.jpeg","lower_image_p002_02.png","lower_image_p002_03.jpeg"
 ];
-
 const upperImages = [
-    "upper_image_p003_01.png", "upper_image_p003_02.png", "upper_image_p003_03.jpeg", "upper_image_p003_04.png", 
-    "upper_image_p003_05.png", "upper_image_p003_06.jpeg",
-    "upper_image_p004_01.png", "upper_image_p004_02.jpeg", "upper_image_p004_03.png", "upper_image_p004_04.png"
+    "upper_image_p003_01.png","upper_image_p003_02.png","upper_image_p003_03.jpeg","upper_image_p003_04.png",
+    "upper_image_p003_05.png","upper_image_p003_06.jpeg",
+    "upper_image_p004_01.png","upper_image_p004_02.jpeg","upper_image_p004_03.png","upper_image_p004_04.png"
 ];
 
-// State
-let currentDayIndex = new Date().getDay(); // 0 (Sun) to 6 (Sat)
-// Map JS getDay (0=Sun, 1=Mon) to our data struct where Mon=1... Sun=0
-const dayMapping = {
-    1: 'monday', 2: 'tuesday', 3: 'wednesday', 
-    4: 'thursday', 5: 'friday', 6: 'saturday', 0: 'sunday'
-};
+// =========================================================
+// STATE
+// =========================================================
+const dayMapping = { 1:'monday', 2:'tuesday', 3:'wednesday', 4:'thursday', 5:'friday', 6:'saturday', 0:'sunday' };
+let currentDayIndex = new Date().getDay();
 
-let userProgress = JSON.parse(localStorage.getItem('workoutProgress')) || {};
+let userProgress   = JSON.parse(localStorage.getItem('workoutProgress'))  || {};
+let seriesProgress = JSON.parse(localStorage.getItem('seriesProgress'))   || {};
+let weightNotes    = JSON.parse(localStorage.getItem('weightNotes'))      || {};
 
-// DOM Elements
-const weekNav = document.getElementById('week-nav');
-const exerciseList = document.getElementById('exercise-list');
-const btnFinish = document.getElementById('btn-finish');
-const modal = document.getElementById('celebration-modal');
-const imagesModal = document.getElementById('images-modal');
+// =========================================================
+// DOM
+// =========================================================
+const weekNav       = document.getElementById('week-nav');
+const exerciseList  = document.getElementById('exercise-list');
+const btnFinish     = document.getElementById('btn-finish');
+const modal         = document.getElementById('celebration-modal');
+const imagesModal   = document.getElementById('images-modal');
 const btnViewImages = document.getElementById('btn-view-images');
-const imageGallery = document.getElementById('image-gallery');
-const resetModal = document.getElementById('reset-modal');
+const imageGallery  = document.getElementById('image-gallery');
+const resetModal    = document.getElementById('reset-modal');
 
-// Timers Elements
 const workoutTimerDisplay = document.getElementById('workout-timer');
-const btnToggleWorkout = document.getElementById('btn-toggle-workout');
-const btnResetWorkout = document.getElementById('btn-reset-workout');
-const workoutTimerBox = document.getElementById('workout-timer-box');
+const btnToggleWorkout    = document.getElementById('btn-toggle-workout');
+const btnResetWorkout     = document.getElementById('btn-reset-workout');
+const workoutTimerBox     = document.getElementById('workout-timer-box');
 
 const restTimerDisplay = document.getElementById('rest-timer');
-const btnToggleRest = document.getElementById('btn-toggle-rest');
-const btnResetRest = document.getElementById('btn-reset-rest');
-const restTimerBox = document.getElementById('rest-timer-box');
+const btnToggleRest    = document.getElementById('btn-toggle-rest');
+const btnResetRest     = document.getElementById('btn-reset-rest');
+const restTimerBox     = document.getElementById('rest-timer-box');
 
-// Timers State
-let workoutSeconds = 0;
-let workoutInterval = null;
-let isWorkoutRunning = false;
+// =========================================================
+// HELPERS
+// =========================================================
+function parseSetsCount(setsStr) {
+    const match = setsStr.match(/^(\d+)/);
+    return match ? parseInt(match[1]) : 1;
+}
 
-let restSeconds = 0;
-let restInterval = null;
-let isRestRunning = false;
-
-// Init
-function init() {
-    checkAutoResetWeek();
-    renderWeekNav();
-    loadDay(dayMapping[currentDayIndex]);
-    updateWeeklyProgress();
-    
-    // Check if workout was already running
-    const savedWorkoutSeconds = localStorage.getItem('workoutSeconds');
-    if (savedWorkoutSeconds) {
-        workoutSeconds = parseInt(savedWorkoutSeconds);
-        updateWorkoutDisplay();
+// =========================================================
+// MIGRATION — old workoutProgress → seriesProgress
+// =========================================================
+function migrateOldProgress() {
+    const hasNew = Object.keys(seriesProgress).length > 0;
+    const hasOld = Object.keys(userProgress).length > 0;
+    if (hasOld && !hasNew) {
+        Object.entries(userProgress).forEach(([dayId, exIds]) => {
+            if (!seriesProgress[dayId]) seriesProgress[dayId] = {};
+            const dayData = workoutData.find(d => d.id === dayId);
+            if (!dayData) return;
+            exIds.forEach(exId => {
+                const ex = dayData.exercises.find(e => e.id === exId);
+                if (ex) seriesProgress[dayId][exId] = parseSetsCount(ex.sets);
+            });
+        });
+        localStorage.setItem('seriesProgress', JSON.stringify(seriesProgress));
     }
 }
 
-// Render Week Navigation
+// =========================================================
+// INIT
+// =========================================================
+function init() {
+    checkAutoResetWeek();
+    migrateOldProgress();
+    renderWeekNav();
+    loadDay(dayMapping[currentDayIndex]);
+    updateWeeklyProgress();
+    updateStreak();
+
+    const saved = localStorage.getItem('workoutSeconds');
+    if (saved) { workoutSeconds = parseInt(saved); updateWorkoutDisplay(); }
+
+    updateRestDisplay();
+
+    // Hide splash screen
+    const hideSplash = () => {
+        const splash = document.getElementById('splash-screen');
+        if (!splash) return;
+        splash.classList.add('fade-out');
+        setTimeout(() => splash && splash.remove(), 500);
+    };
+    if (document.readyState === 'complete') {
+        setTimeout(hideSplash, 700);
+    } else {
+        window.addEventListener('load', () => setTimeout(hideSplash, 700));
+    }
+}
+
+// =========================================================
+// STREAK
+// =========================================================
+function recordTrainingDay() {
+    const today = new Date().toISOString().split('T')[0];
+    let dates = JSON.parse(localStorage.getItem('trainingDates')) || [];
+    if (!dates.includes(today)) {
+        dates.push(today);
+        localStorage.setItem('trainingDates', JSON.stringify(dates));
+        updateStreak();
+    }
+}
+
+function getStreak() {
+    const dates = new Set(JSON.parse(localStorage.getItem('trainingDates')) || []);
+    const d = new Date();
+    const today = d.toISOString().split('T')[0];
+    if (!dates.has(today)) d.setDate(d.getDate() - 1);
+    let streak = 0;
+    while (true) {
+        const s = d.toISOString().split('T')[0];
+        if (dates.has(s)) { streak++; d.setDate(d.getDate() - 1); }
+        else break;
+    }
+    return streak;
+}
+
+function updateStreak() {
+    const streak = getStreak();
+    const badge = document.getElementById('streak-badge');
+    const count = document.getElementById('streak-count');
+    if (!badge || !count) return;
+    count.innerText = streak;
+    badge.classList.toggle('hidden', streak < 2);
+}
+
+// =========================================================
+// WEEK NAV
+// =========================================================
 function renderWeekNav() {
     weekNav.innerHTML = '';
-    // Sort logic to show Mon -> Sun
-    const sortedData = [...workoutData].sort((a, b) => {
-        let nA = a.num === 0 ? 7 : a.num;
-        let nB = b.num === 0 ? 7 : b.num;
-        return nA - nB;
-    });
-
-    sortedData.forEach(day => {
+    const sorted = [...workoutData].sort((a, b) => (a.num === 0 ? 7 : a.num) - (b.num === 0 ? 7 : b.num));
+    sorted.forEach(day => {
         const btn = document.createElement('button');
         btn.className = `day-btn ${day.id === dayMapping[currentDayIndex] ? 'active' : ''}`;
         btn.innerText = day.name.substring(0, 3);
@@ -206,32 +243,21 @@ function renderWeekNav() {
     });
 }
 
-// Load Specific Day
+// =========================================================
+// LOAD DAY
+// =========================================================
 function loadDay(dayId) {
     const dayData = workoutData.find(d => d.id === dayId);
-    
-    // Update theme specific to the day
     document.body.className = `theme-${dayId}`;
-
-    // Update Headers
     document.getElementById('current-day-title').innerText = `${dayData.title} - ${dayData.name}`;
     document.getElementById('workout-focus').innerText = dayData.focus;
+    btnViewImages.style.display = 'flex';
 
-    // View Images Button Logic
-    if (['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].includes(dayId)) {
-        btnViewImages.style.display = 'flex';
-    } else {
-        btnViewImages.style.display = 'none';
-    }
-
-    // Render Exercises
     exerciseList.innerHTML = '';
-    
     let currentCategory = '';
 
     dayData.exercises.forEach((ex, index) => {
-        // Render Category Header if changes
-        if(ex.category !== currentCategory) {
+        if (ex.category !== currentCategory) {
             const catEl = document.createElement('div');
             catEl.className = 'exercise-category';
             catEl.innerText = ex.category;
@@ -239,13 +265,14 @@ function loadDay(dayId) {
             currentCategory = ex.category;
         }
 
-        const isArr = userProgress[dayId] || [];
-        const isCompleted = isArr.includes(ex.id);
+        const totalSets  = parseSetsCount(ex.sets);
+        const doneSets   = (seriesProgress[dayId] && seriesProgress[dayId][ex.id]) || 0;
+        const isCompleted = doneSets >= totalSets;
+        const note        = (weightNotes[dayId] && weightNotes[dayId][ex.id]) || '';
 
         const card = document.createElement('div');
         card.className = `exercise-card ${isCompleted ? 'completed' : ''}`;
-        card.onclick = () => toggleExercise(dayId, ex.id, card);
-
+        card.id = `card-${ex.id}`;
         card.innerHTML = `
             <div class="ex-number">${index + 1}</div>
             <div class="ex-details">
@@ -254,46 +281,120 @@ function loadDay(dayId) {
                     <span><i class="fa-solid fa-repeat"></i> ${ex.sets}</span>
                     <span><i class="fa-solid fa-dumbbell"></i> ${ex.reps}</span>
                 </div>
+                <div class="note-area ${note ? '' : 'hidden'}" id="note-area-${ex.id}">
+                    <input type="text" class="note-input"
+                        placeholder="Carga / observação..."
+                        value="${note.replace(/"/g, '&quot;')}"
+                        data-dayid="${dayId}" data-exid="${ex.id}" />
+                </div>
             </div>
-            <div class="custom-checkbox">
-                <i class="fa-solid fa-check"></i>
+            <div class="card-actions">
+                <button class="note-btn" data-exid="${ex.id}" title="Anotar carga">
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+                <div class="series-counter">
+                    <button class="series-btn minus"
+                        data-dayid="${dayId}" data-exid="${ex.id}" data-total="${totalSets}">−</button>
+                    <span class="series-count" id="sc-${ex.id}">${doneSets}/${totalSets}</span>
+                    <button class="series-btn plus"
+                        data-dayid="${dayId}" data-exid="${ex.id}" data-total="${totalSets}">+</button>
+                </div>
             </div>
         `;
-        
         exerciseList.appendChild(card);
     });
 
+    // Series buttons
+    exerciseList.querySelectorAll('.series-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+            e.stopPropagation();
+            const delta = btn.classList.contains('plus') ? 1 : -1;
+            changeSeries(btn.dataset.dayid, btn.dataset.exid, parseInt(btn.dataset.total), delta);
+        });
+    });
+
+    // Note toggle
+    exerciseList.querySelectorAll('.note-btn').forEach(btn => {
+        btn.addEventListener('click', e => {
+            e.stopPropagation();
+            const area = document.getElementById(`note-area-${btn.dataset.exid}`);
+            area.classList.toggle('hidden');
+            if (!area.classList.contains('hidden')) area.querySelector('input').focus();
+        });
+    });
+
+    // Note save
+    exerciseList.querySelectorAll('.note-input').forEach(input => {
+        input.addEventListener('input', e => {
+            const { dayid, exid } = e.target.dataset;
+            if (!weightNotes[dayid]) weightNotes[dayid] = {};
+            weightNotes[dayid][exid] = e.target.value;
+            localStorage.setItem('weightNotes', JSON.stringify(weightNotes));
+        });
+    });
+
     checkFinishButton(dayId);
+    updateProgressBar(dayId);
 }
 
-// Toggle Exercise Status
-function toggleExercise(dayId, exId, cardElement) {
+// =========================================================
+// SERIES COUNTER
+// =========================================================
+function changeSeries(dayId, exId, total, delta) {
+    if (!seriesProgress[dayId]) seriesProgress[dayId] = {};
+    const current = seriesProgress[dayId][exId] || 0;
+    const next    = Math.max(0, Math.min(total, current + delta));
+    seriesProgress[dayId][exId] = next;
+    localStorage.setItem('seriesProgress', JSON.stringify(seriesProgress));
+
+    const sc = document.getElementById(`sc-${exId}`);
+    if (sc) sc.innerText = `${next}/${total}`;
+
+    const card        = document.getElementById(`card-${exId}`);
+    const isCompleted = next >= total;
+
     if (!userProgress[dayId]) userProgress[dayId] = [];
-    
-    const index = userProgress[dayId].indexOf(exId);
-    if (index > -1) {
-        userProgress[dayId].splice(index, 1);
-        cardElement.classList.remove('completed');
-    } else {
+    const idx = userProgress[dayId].indexOf(exId);
+
+    if (isCompleted && idx === -1) {
         userProgress[dayId].push(exId);
-        cardElement.classList.add('completed');
+        card && card.classList.add('completed');
+        recordTrainingDay();
+    } else if (!isCompleted && idx > -1) {
+        userProgress[dayId].splice(idx, 1);
+        card && card.classList.remove('completed');
     }
 
     localStorage.setItem('workoutProgress', JSON.stringify(userProgress));
-    
     checkFinishButton(dayId);
     updateWeeklyProgress();
+    updateProgressBar(dayId);
 }
 
-// Manage Finish Button visibility
+// =========================================================
+// PROGRESS BAR
+// =========================================================
+function updateProgressBar(dayId) {
+    const dayData = workoutData.find(d => d.id === dayId);
+    if (!dayData) return;
+    const total = dayData.exercises.length;
+    const done  = (userProgress[dayId] || []).length;
+    const pct   = total > 0 ? (done / total) * 100 : 0;
+    const fill  = document.getElementById('progress-bar-fill');
+    const text  = document.getElementById('progress-bar-text');
+    if (fill) fill.style.width = pct + '%';
+    if (text) text.innerText = `${done}/${total}`;
+}
+
+// =========================================================
+// FINISH BUTTON & WEEKLY PROGRESS
+// =========================================================
 function checkFinishButton(dayId) {
     const dayData = workoutData.find(d => d.id === dayId);
-    if(!dayData) return;
-
-    const totalEx = dayData.exercises.length;
-    const completedEx = (userProgress[dayId] || []).length;
-
-    if (totalEx > 0 && totalEx === completedEx) {
+    if (!dayData) return;
+    const total = dayData.exercises.length;
+    const done  = (userProgress[dayId] || []).length;
+    if (total > 0 && total === done) {
         btnFinish.style.display = 'flex';
         btnFinish.onclick = () => showModal();
     } else {
@@ -302,129 +403,114 @@ function checkFinishButton(dayId) {
     }
 }
 
-// Calculate Weekly Progress
 function updateWeeklyProgress() {
-    let totalExercises = 0;
-    let totalCompleted = 0;
-
+    let total = 0, done = 0;
     workoutData.forEach(day => {
-        totalExercises += day.exercises.length;
-        totalCompleted += (userProgress[day.id] || []).length;
+        total += day.exercises.length;
+        done  += (userProgress[day.id] || []).length;
     });
-
-    const percent = totalExercises > 0 ? Math.round((totalCompleted / totalExercises) * 100) : 0;
-    
-    const circle = document.getElementById('weekly-progress');
-    const textPercent = document.getElementById('weekly-percent');
-    
-    circle.setAttribute('stroke-dasharray', `${percent}, 100`);
-    textPercent.innerText = `${percent}%`;
+    const pct = total > 0 ? Math.round((done / total) * 100) : 0;
+    document.getElementById('weekly-progress').setAttribute('stroke-dasharray', `${pct}, 100`);
+    document.getElementById('weekly-percent').innerText = `${pct}%`;
 }
 
-// Modal Functions
+// =========================================================
+// CONFETTI
+// =========================================================
+function launchConfetti() {
+    const container = document.getElementById('confetti-container');
+    if (!container) return;
+    const colors = ['#10b981','#6366f1','#f59e0b','#ef4444','#ec4899','#3b82f6','#34d399','#a78bfa'];
+    for (let i = 0; i < 90; i++) {
+        const p = document.createElement('div');
+        p.className = 'confetti-piece';
+        p.style.cssText = `
+            left:${Math.random() * 100}vw;
+            width:${6 + Math.random() * 6}px;
+            height:${10 + Math.random() * 8}px;
+            background:${colors[Math.floor(Math.random() * colors.length)]};
+            animation-duration:${1.5 + Math.random() * 2}s;
+            animation-delay:${Math.random() * 0.5}s;
+            transform:rotate(${Math.random() * 360}deg);
+            border-radius:${Math.random() > 0.5 ? '50%' : '2px'};
+        `;
+        container.appendChild(p);
+        p.addEventListener('animationend', () => p.remove());
+    }
+}
+
+// =========================================================
+// MODALS
+// =========================================================
 function showModal() {
     modal.classList.add('active');
+    launchConfetti();
 }
+function closeModal() { modal.classList.remove('active'); }
 
-function closeModal() {
-    modal.classList.remove('active');
-}
-
-// Images Modal Functions
 function openImagesModal() {
-    // Populate
     imageGallery.innerHTML = '';
     const dayId = dayMapping[currentDayIndex];
-    let imagesToShow = [];
-
-    // Lower body days
-    if (['monday', 'wednesday', 'friday', 'saturday'].includes(dayId)) {
-        imagesToShow = lowerImages;
-    }
-    // Upper body days
-    else if (['tuesday', 'thursday'].includes(dayId)) {
-        imagesToShow = upperImages;
-    }
-    // Sunday (both)
-    else if (dayId === 'sunday') {
-        imagesToShow = [...lowerImages, ...upperImages];
-    }
-
-    imagesToShow.forEach(img => {
-        const imgEl = document.createElement('img');
-        imgEl.src = `assets/images/${img}`;
-        imgEl.loading = "lazy";
-        imageGallery.appendChild(imgEl);
+    let imgs = [];
+    if (['monday','wednesday','friday','saturday'].includes(dayId)) imgs = lowerImages;
+    else if (['tuesday','thursday'].includes(dayId)) imgs = upperImages;
+    else imgs = [...lowerImages, ...upperImages];
+    imgs.forEach(img => {
+        const el = document.createElement('img');
+        el.src = `assets/images/${img}`;
+        el.loading = 'lazy';
+        imageGallery.appendChild(el);
     });
-
     imagesModal.classList.add('active');
 }
+function closeImagesModal() { imagesModal.classList.remove('active'); }
 
-function closeImagesModal() {
-    imagesModal.classList.remove('active');
+function openResetModal()  { resetModal.classList.add('active'); }
+function closeResetModal() { resetModal.classList.remove('active'); }
+
+function confirmResetWeek() { doResetWeek(); closeResetModal(); }
+
+function doResetWeek() {
+    localStorage.removeItem('workoutProgress');
+    localStorage.removeItem('seriesProgress');
+    localStorage.removeItem('workoutSeconds');
+    userProgress   = {};
+    seriesProgress = {};
+    workoutSeconds = 0;
+    updateWorkoutDisplay();
+    if (isWorkoutRunning) toggleWorkoutTimer();
+    loadDay(dayMapping[currentDayIndex]);
+    updateWeeklyProgress();
 }
 
-// Reset Week Functions
+// =========================================================
+// AUTO RESET
+// =========================================================
 function checkAutoResetWeek() {
-    const lastAccessStr = localStorage.getItem('lastAccessDate');
-    const today = new Date();
-    
-    if (lastAccessStr) {
-        const lastAccess = new Date(lastAccessStr);
-        // If it's a new week (Monday) and the last access wasn't today
-        if (today.getDay() === 1 && today.toDateString() !== lastAccess.toDateString() && lastAccess.getDay() !== 1) {
-            // It's Monday, let's auto-reset the week if the last access was previous week
-            const diffTime = Math.abs(today - lastAccess);
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-            if (diffDays >= 1) {
-                 doResetWeek();
-            }
+    const lastStr = localStorage.getItem('lastAccessDate');
+    const today   = new Date();
+    if (lastStr) {
+        const last = new Date(lastStr);
+        if (today.getDay() === 1 && today.toDateString() !== last.toDateString() && last.getDay() !== 1) {
+            const diff = Math.ceil(Math.abs(today - last) / (1000 * 60 * 60 * 24));
+            if (diff >= 1) doResetWeek();
         }
     }
     localStorage.setItem('lastAccessDate', today.toISOString());
 }
 
-function openResetModal() {
-    resetModal.classList.add('active');
-}
+// =========================================================
+// WORKOUT TIMER
+// =========================================================
+let workoutSeconds  = 0;
+let workoutInterval = null;
+let isWorkoutRunning = false;
 
-function closeResetModal() {
-    resetModal.classList.remove('active');
+function formatWorkoutTime(s) {
+    const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), sec = s % 60;
+    return [h, m, sec].map(v => v.toString().padStart(2, '0')).join(':');
 }
-
-function confirmResetWeek() {
-    doResetWeek();
-    closeResetModal();
-}
-
-function doResetWeek() {
-    // Clear all completed exercises
-    localStorage.removeItem('workoutProgress');
-    userProgress = {};
-
-    // Clear workout timer
-    localStorage.removeItem('workoutSeconds');
-    workoutSeconds = 0;
-    updateWorkoutDisplay();
-    if(isWorkoutRunning) toggleWorkoutTimer();
-    
-    // Reload UI
-    loadDay(dayMapping[currentDayIndex]);
-    updateWeeklyProgress();
-}
-
-// Timers Logic
-// --- Workout Timer ---
-function formatWorkoutTime(totalSeconds) {
-    const h = Math.floor(totalSeconds / 3600);
-    const m = Math.floor((totalSeconds % 3600) / 60);
-    const s = totalSeconds % 60;
-    return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-}
-
-function updateWorkoutDisplay() {
-    workoutTimerDisplay.innerText = formatWorkoutTime(workoutSeconds);
-}
+function updateWorkoutDisplay() { workoutTimerDisplay.innerText = formatWorkoutTime(workoutSeconds); }
 
 function toggleWorkoutTimer() {
     if (isWorkoutRunning) {
@@ -453,15 +539,47 @@ function resetWorkoutTimer() {
 btnToggleWorkout.addEventListener('click', toggleWorkoutTimer);
 btnResetWorkout.addEventListener('click', resetWorkoutTimer);
 
-// --- Rest Timer ---
-function formatRestTime(totalSeconds) {
-    const m = Math.floor(totalSeconds / 60);
-    const s = totalSeconds % 60;
-    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+// =========================================================
+// REST TIMER — countdown 90 s + vibração + beep
+// =========================================================
+const REST_DEFAULT = 90;
+let restSeconds   = REST_DEFAULT;
+let restInterval  = null;
+let isRestRunning = false;
+
+function formatRestTime(s) {
+    const m = Math.floor(s / 60), sec = s % 60;
+    return `${m.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+}
+function updateRestDisplay() { restTimerDisplay.innerText = formatRestTime(restSeconds); }
+
+function playBeep() {
+    try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        [0, 0.3, 0.6].forEach(delay => {
+            const osc  = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.connect(gain);
+            gain.connect(ctx.destination);
+            osc.frequency.value = 880;
+            gain.gain.setValueAtTime(0.4, ctx.currentTime + delay);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + delay + 0.25);
+            osc.start(ctx.currentTime + delay);
+            osc.stop(ctx.currentTime + delay + 0.25);
+        });
+    } catch (e) { /* browser may block AudioContext without user gesture */ }
 }
 
-function updateRestDisplay() {
-    restTimerDisplay.innerText = formatRestTime(restSeconds);
+function onRestFinished() {
+    clearInterval(restInterval);
+    restInterval  = null;
+    isRestRunning = false;
+    btnToggleRest.innerHTML = '<i class="fa-solid fa-play"></i>';
+    restTimerBox.classList.remove('active');
+    restTimerBox.classList.add('finished');
+    setTimeout(() => restTimerBox.classList.remove('finished'), 1800);
+    playBeep();
+    if (navigator.vibrate) navigator.vibrate([200, 100, 200, 100, 300]);
 }
 
 function toggleRestTimer() {
@@ -470,9 +588,11 @@ function toggleRestTimer() {
         btnToggleRest.innerHTML = '<i class="fa-solid fa-play"></i>';
         restTimerBox.classList.remove('active');
     } else {
+        if (restSeconds <= 0) restSeconds = REST_DEFAULT;
         restInterval = setInterval(() => {
-            restSeconds++;
+            restSeconds--;
             updateRestDisplay();
+            if (restSeconds <= 0) onRestFinished();
         }, 1000);
         btnToggleRest.innerHTML = '<i class="fa-solid fa-pause"></i>';
         restTimerBox.classList.add('active');
@@ -481,13 +601,20 @@ function toggleRestTimer() {
 }
 
 function resetRestTimer() {
-    if (isRestRunning) toggleRestTimer();
-    restSeconds = 0;
+    if (isRestRunning) {
+        clearInterval(restInterval);
+        isRestRunning = false;
+        btnToggleRest.innerHTML = '<i class="fa-solid fa-play"></i>';
+        restTimerBox.classList.remove('active');
+    }
+    restSeconds = REST_DEFAULT;
     updateRestDisplay();
 }
 
 btnToggleRest.addEventListener('click', toggleRestTimer);
 btnResetRest.addEventListener('click', resetRestTimer);
 
-// Initialize App
+// =========================================================
+// START
+// =========================================================
 init();

@@ -26,15 +26,29 @@
     <link rel="manifest" href="manifest.json" />
   </head>
   <body>
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+      <div class="splash-logo">
+        <div class="splash-avatar">DK</div>
+        <p>Meu Shape</p>
+      </div>
+    </div>
+    <!-- Confetti -->
+    <div id="confetti-container"></div>
+
     <div class="app-container">
       <!-- Header -->
       <header class="app-header">
         <div class="header-content">
           <div class="user-greeting">
-            <h1>Dra. Kênnia</h1>
-            <p>Cronograma Avançado de Treinos</p>
+            <div class="user-avatar">DK</div>
+            <div>
+              <h1>Dra. Kênnia</h1>
+              <p>Cronograma Avançado de Treinos</p>
+            </div>
           </div>
           <div class="header-stats">
+            <span id="streak-badge" class="streak-badge hidden">🔥 <span id="streak-count">0</span> dias</span>
             <div class="stat-circle">
               <svg viewBox="0 0 36 36" class="circular-chart">
                 <path
@@ -94,6 +108,14 @@
           <button class="btn-icon hidden" id="btn-view-images" onclick="openImagesModal()" title="Ver Imagens Informativas">
             <i class="fa-solid fa-images"></i>
           </button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="progress-bar-container">
+          <div class="progress-bar-track">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+          </div>
+          <span class="progress-bar-text" id="progress-bar-text">0/0</span>
         </div>
 
         <!-- Exercises List -->
