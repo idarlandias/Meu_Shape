@@ -109,7 +109,7 @@ const workoutData = [
             { id: 'sun-2', category: 'Mobilidade', title: 'Alongamento Posterior / Tornozelo', sets: '1 série', reps: '40s / 20s' },
             { id: 'sun-3', category: 'Mobilidade', title: 'Alongamento Reto Femural', sets: '2 séries', reps: '30s / 8 movimentos' },
             { id: 'sun-4', category: 'Mobilidade', title: 'Alongamento Adutores', sets: '1 série', reps: '16x + 20s por lado' },
-            { id: 'sun-5', category: 'Superiores', title: 'Ao Longamento Lombar, Ombros, Tríceps', sets: '2 séries', reps: 'Treino Funcional de Mobilidade Geral' }
+            { id: 'sun-5', category: 'Mobilidade', title: 'Alongamento Lombar, Ombros, Tríceps', sets: '2 séries', reps: 'Treino Funcional de Mobilidade Geral' }
         ]
     }
 ];
