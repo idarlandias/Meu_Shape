@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Shape | Cronograma Avançado</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="app-header">
+        <div class="header-content">
+          <div class="user-greeting">
+            <h1>Sua Jornada Fitness</h1>
+            <p>Cronograma Avançado de Treinos</p>
+          </div>
+          <div class="header-stats">
+            <div class="stat-circle">
+              <svg viewBox="0 0 36 36" class="circular-chart">
+                <path
+                  class="circle-bg"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+                <path
+                  class="circle"
+                  id="weekly-progress"
+                  stroke-dasharray="0, 100"
+                  d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                />
+              </svg>
+              <div class="stat-text" id="weekly-percent">0%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls (Timers & Reset) -->
+        <div class="dashboard-controls">
+            <!-- Timers -->
+            <div class="timers-container">
+                <div class="timer-box" id="workout-timer-box">
+                    <i class="fa-solid fa-stopwatch"></i>
+                    <span id="workout-timer">00:00:00</span>
+                    <button id="btn-toggle-workout" class="timer-btn play"><i class="fa-solid fa-play"></i></button>
+                    <button id="btn-reset-workout" class="timer-btn reset"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+                
+                <div class="timer-box rest-timer" id="rest-timer-box">
+                    <i class="fa-solid fa-bed"></i>
+                    <span id="rest-timer">00:00</span>
+                    <button id="btn-toggle-rest" class="timer-btn play"><i class="fa-solid fa-play"></i></button>
+                    <button id="btn-reset-rest" class="timer-btn reset"><i class="fa-solid fa-rotate-left"></i></button>
+                </div>
+            </div>
+            
+            <!-- Reset Progress -->
+            <button class="btn-reset-week" onclick="openResetModal()" title="Resetar Progresso da Semana">
+                <i class="fa-solid fa-trash-can"></i>
+            </button>
+        </div>
+
+        <!-- Week Navigation -->
+        <nav class="week-nav" id="week-nav">
+          <!-- Javascript will populate days here -->
+        </nav>
+      </header>
+
+      <!-- Main Content -->
+      <main class="app-main">
+        <div class="section-title">
+          <div>
+            <h2 id="current-day-title">Treino de Hoje</h2>
+            <span class="badge" id="workout-focus">Foco do Treino</span>
+          </div>
+          <button class="btn-icon hidden" id="btn-view-images" onclick="openImagesModal()" title="Ver Imagens Informativas">
+            <i class="fa-solid fa-images"></i>
+          </button>
+        </div>
+
+        <!-- Exercises List -->
+        <div class="exercise-list" id="exercise-list">
+          <!-- Javascript will populate exercises here -->
+        </div>
+
+        <button class="btn-finish" id="btn-finish" style="display: none">
+          <i class="fa-solid fa-check-double"></i> Finalizar Treino
+        </button>
+      </main>
+    </div>
+
+    <!-- Celebration Modal -->
+    <div class="modal-overlay" id="celebration-modal">
+      <div class="modal-content">
+        <div class="celebration-icon">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h2>Treino Concluído!</h2>
+        <p>Você destruiu o treino de hoje. Continue assim e o shape vem!</p>
+        <button class="btn-primary" onclick="closeModal()">Incrível!</button>
+      </div>
+    </div>
+
+    <!-- Images Gallery Modal -->
+    <div class="modal-overlay" id="images-modal">
+      <div class="modal-content modal-large">
+        <div class="modal-header">
+          <h2>Imagens Informativas</h2>
+          <button class="close-btn" onclick="closeImagesModal()" title="Fechar Imagens" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <p class="modal-subtitle">Alongamentos e Mobilidade do PDF</p>
+        <div class="image-gallery" id="image-gallery">
+          <!-- Javascript will populate images here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

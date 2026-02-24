@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria de Imagens</title>
+    <style>
+        body { font-family: sans-serif; background: #222; color: #fff; padding: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 20px; }
+        .card { background: #333; padding: 10px; border-radius: 8px; text-align: center; }
+        img { max-width: 100%; height: auto; border-radius: 4px; }
+        .size { color: #aaa; font-size: 0.8em; }
+    </style>
+</head>
+<body>
+    <h1>Imagens Extraídas</h1>
+    <div class="grid">
+        <!-- Add image tags -->
+        <script>
+            // We have the file list from list_dir. I'll just hardcode some of the interesting ones to view them.
+            const files = [
+                "image_p001_01.jpeg", "image_p001_02.jpeg", "image_p001_03.jpeg", "image_p001_04.jpeg",
+                "image_p001_05.png", "image_p001_06.png", "image_p001_07.png",
+                "image_p002_01.jpeg", "image_p002_02.png", "image_p002_03.jpeg", "image_p002_04.png",
+                "image_p003_01.png", "image_p003_02.png", "image_p003_03.jpeg", "image_p003_04.png", "image_p003_05.png", "image_p003_06.jpeg",
+                "image_p004_01.png", "image_p004_02.jpeg", "image_p004_03.png", "image_p004_04.png",
+                "image_p006_01.png" // To check the 15KB file
+            ];
+            
+            const grid = document.querySelector('.grid');
+            files.forEach(f => {
+                grid.innerHTML += `<div class="card">
+                    <img src="images_extracted/${f}" alt="${f}">
+                    <p>${f}</p>
+                </div>`;
+            });
+        </script>
+    </div>
+</body>
+</html>
