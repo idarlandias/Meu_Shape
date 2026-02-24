@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="#0f172a"/>
+  <!-- Dumbbell -->
+  <!-- Left collar -->
+  <rect x="108" y="220" width="36" height="72" rx="8" fill="#10b981"/>
+  <!-- Left plate -->
+  <rect x="76" y="200" width="36" height="112" rx="10" fill="#10b981"/>
+  <!-- Bar -->
+  <rect x="144" y="244" width="224" height="24" rx="4" fill="#10b981"/>
+  <!-- Right collar -->
+  <rect x="368" y="220" width="36" height="72" rx="8" fill="#10b981"/>
+  <!-- Right plate -->
+  <rect x="400" y="200" width="36" height="112" rx="10" fill="#10b981"/>
+</svg>
