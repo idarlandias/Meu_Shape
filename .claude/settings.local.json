@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd A:\\\\Meu_Shape:*)",
+      "Bash(cd:*)"
+    ]
+  }
+}
